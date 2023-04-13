@@ -1,3 +1,0 @@
-real_part= exp(-0.1).*n
-imaginary_part=exp(0.3*i).*n
-signal=
