@@ -7,7 +7,7 @@ X1= zeros( size( n1 ) );
 for m = 0 : 10 
     X1 = X1 + ( ( m+1 ) * ( dirac( n1 - 2 * m ) - dirac( n1 - 2 * m - 1  ) ) ) ;
     X1( X1 == Inf ) = m + 1 ;
-    X1( X1 == -Inf ) = -1 ;
+    X1( X1 == -Inf ) = -( m + 1 ) ;
 end
 
 %b)
