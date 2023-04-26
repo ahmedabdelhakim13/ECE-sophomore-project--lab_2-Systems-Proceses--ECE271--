@@ -21,6 +21,8 @@ figure;
 stem(n,y2);
 grid on;
 figure;
-y3=n.*[zeros(1,1) x(1:end-1)] + n.*[zeros(1,2) x(1:end-2)]+ n.*[zeros(1,3) x(1:end-3)] + n.*[zeros(1,4) x(1:end-4)] +n.*[zeros(1,5) x(1:end-5)];
+y3=n.*[zeros(1,1) x(1:end-1)] + n.*[zeros(1,2) x(1:end-2)]
++ n.*[zeros(1,3) x(1:end-3)] + n.*[zeros(1,4) x(1:end-4)] 
++n.*[zeros(1,5) x(1:end-5)];
 stem(n,y3);
 grid on;
