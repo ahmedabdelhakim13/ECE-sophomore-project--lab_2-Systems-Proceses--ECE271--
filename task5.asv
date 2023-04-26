@@ -1,5 +1,31 @@
 clc
-n=linspace(-10,10,7);
-X=[0,0,0,0,0,0,1,-2,4,6,-5,8,10,0,0,0,0,];
 
-stem(X);
+x=[1,-2,4,6,-5,8,10];  %define the sequence
+n=-4:2;
+figure;
+stem(n,x);
+%subplot(4,1,2);
+x11=3*x;
+n11=n-2;
+figure;
+stem(n11,x11);
+
+x12=x;
+n12=n+4;
+figure;
+stem(n12,x12);
+
+x13=2*x;
+n13=n;
+figure;
+stem(n13,x13);
+
+for n=-10:10 ;
+    y1=x11+x12+x13;
+   
+end
+m=linspace(-6,6,12
+figure;
+stem(y1);
+
+
