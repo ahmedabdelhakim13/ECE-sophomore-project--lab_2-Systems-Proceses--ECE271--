@@ -6,17 +6,11 @@ signal= real_part .* imaginary_part;
 subplot(2,2,1);
 plot(n,abs(signal));
 
-
-
 subplot(2,2,2);
 plot(n,angle(signal));
 
-
-
-
 subplot(2,2,3);
 plot(n,real_part);
-
 
 
 subplot(2,2,4);
