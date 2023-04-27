@@ -1,4 +1,33 @@
 clear
+x=cos(2*n./3);
+y=cos(8*pi*n./38);
+m=linspace(-40,40,40);
+w= resample(x,2,1);
+z= upsample(y,2,1);
+
+subplot(2,2,2);
+stem(m,w,'k-o');
+xlabel('sampels');
+ylabel('frequency');
+grid on
+
+subplot(2,2,4);
+stem(m,z,'k-o');
+xlabel('sampels');
+ylabel('frequency');
+grid on
+%for better vesion of the functions
+figure;
+stem(n,x,'k-o');
+figure;
+stem(n,y,'k-o');
+figure;
+stem(m,w,'k-o');
+figure;
+stem(m,z,'k-o');
+
+%%changing the frequency and period 
+
 n=linspace(0,40,20);
 t=linspace(0,40,4000);
 
@@ -9,7 +38,7 @@ Ydis=cos((8.*pi.*n)./38)%disrete signal
 Ycont=cos((8.*pi.*t)./38)%contineous signal
 
 subplot(2,2,1)
-stem(n,Xdis)
+stem(n_ne,Xdis)
 xlabel('sampels');
 ylabel('frequency');
 grid on;
@@ -34,9 +63,9 @@ grid on;
 
 %for better vesion of the functions
 figure;
-stem(n,Xdis,'k-o');
+stem(n_new,Xdis,'k-o');
 figure;
-stem(n,Ydis,'k-o');
+stem(n_new,Ydis,'k-o');
 figure;
 plot(t,Xcont);
 figure;
