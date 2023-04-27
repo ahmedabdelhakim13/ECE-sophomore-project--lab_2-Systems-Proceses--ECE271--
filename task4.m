@@ -1,13 +1,13 @@
 clear
 n=linspace(0,40,20);
 t=linspace(0,40,4000);
-
+%---------------------------------;
 Xdis=cos((2.*n)./3);%disrete signal
 Xcont=cos((2.*t)./3);%contineous signal
-
+%-------------------------------------;
 Ydis=cos((8.*pi.*n)./38)%disrete signal
 Ycont=cos((8.*pi.*t)./38)%contineous signal
-
+%--------------------------------------;
 subplot(2,2,1)
 stem(n,Xdis)
 xlabel('sampels');
