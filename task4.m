@@ -30,8 +30,16 @@ stem(m,z,'k-o');
 xlabel('time');
 ylabel('frequency');
 grid on
+%for better vesion of the functions
+figure;
+stem(n,x,'k-o');
+figure;
+stem(n,y,'k-o');
+figure;
+stem(m,w,'k-o');
+figure;
+stem(m,z,'k-o');
 
-%%
 %%changing the frequency and period 
 
 n=linspace(0,40,20)%because the sampling time T=2 so sampling freq is 0.5
