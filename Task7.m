@@ -1,4 +1,4 @@
-%Clear Command window
+Clear Command window
 clear all;
 clc;
 %Generating n which from 0 to 50 by step 1 and Generating Gaussian distributed sequence by using randn command
