@@ -25,13 +25,11 @@ stem(n,Ydis);
 xlabel('sampels');
 ylabel('frequency');
 grid on;
-
 subplot(2,2,4);
 plot(t,Ycont);
 xlabel('time');
 ylabel('frequency)');
 grid on;
-
 %for better vesion of the functions
 figure;
 stem(n,Xdis,'k-o');
@@ -41,5 +39,3 @@ figure;
 plot(t,Xcont);
 figure;
 plot(t,Ycont);
-
-
