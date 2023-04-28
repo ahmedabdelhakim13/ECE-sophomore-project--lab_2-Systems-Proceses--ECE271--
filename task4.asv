@@ -46,6 +46,3 @@ stem(n,Xdis);
 hold on;
 plot(t,Xcont);
 figure;
-stem(n,Ydis);
-hold on;
-plot(t,Ycont);
