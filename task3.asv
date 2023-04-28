@@ -17,6 +17,7 @@ subplot(4,1,3);
 stem(n,x3);
 subplot(4,1,4);
 stem(n,x4);
+
 % when fs=50000anf f0=2000
 t_new=n./50000;
 %definning a new time
@@ -24,9 +25,11 @@ t_new_even=t_new(2:2:100);
 %to select only even samples we take step of 2 from the rang of n[0:100]
 x_new=sin(2*pi*2000*t_new);
 x_new_even=x_new(2:2:100);
+
 %plottinf the new fun tions
 figure;
 subplot(2,1,1);
 stem(t_new,x_new);
+
 subplot(2,1,2);
 stem(t_new_even,x_new_even);
